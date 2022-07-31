@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Седона: Форма отзыва</title>
+</head>
+
+<body class="page__body page__form">
+  <header class="main-header">
+    <nav class="main-nav">
+      <a class="main-header__logo" href="#">
+        <img class="main-header__logo-image" src="img/header/logo-phone.svg" width="185" height="96"
+          alt="Город Седона.">
+      </a>
+      <button class="main-nav_toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+      <div class="main-nav_wrapper">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a class="site-list__link">Главная</a>
+            <button class="main-nav_toggle site-list__item-close" type="button"></button>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="#">Фото и видео</a>
+          </li>
+        </ul>
+        <ul class="main-nav__list user-list">
+          <li class="user-list__item">
+            <a class="user-list__link" href="#">Форма Отзыва</a>
+          </li>
+          <li class="user-list__item">
+            <a class="user-list__link" href="#">HTML ACADEMY</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main class="main-container page-form-container">
+    <h1 class="visually-hidden">Форма отзыва сайта Седона</h1>
+    <div class="main-picture main-picture-wrapper">
+      <img class="main-picture__slogan" src="img/form/SEDONA.svg" width="229" height="39"
+        alt="Добро пожаловать в великолепное место Седона.">
+      <div class="main-picture__decoration"></div>
+    </div>
+    <section class="form-description form-description__wrapper">
+      <h2 class="form-description__intro">Оставьте свой отзыв</h2>
+      <p class="form-description__request">Помогите нашим отелям стать лучше!<br> оставьте отзыв о них, а также о<br>
+        посещенных вами<br> достопримечательностях</p>
+    </section>
+    <section class="revocation-form revocation-form-wrapper">
+      <form class="revocation-form__filter" action="https://echo.htmlacademy.ru/" method="post">
+        <fieldset class="revocation-form__filter-group">
+          <legend class="revocation-form__filter-group-title">Представьтесь:</legend>
+          <ul class="revocation-form__filter-group-list">
+            <li class="revocation-form__filter-group-item">
+              <label class="revocation-form__control" for="name-id">ИМЯ*:</label>
+              <input class="revocation-form__control-input" type="text" name="name" placeholder="Введите имя"
+                id="name-id" required>
+              <span class="visually-hidden">Ваше имя</span>
+            </li>
+            <li class="revocation-form__filter-group-item">
+              <label class="revocation-form__control" for="surname-id">ФАМИЛИЯ*:</label>
+              <input class="revocation-form__control-input" type="text" name="surname" placeholder="Введите фамилию"
+                id="surname-id" required>
+              <span class="visually-hidden">Ваше имя</span>
+            </li>
+            <li class="revocation-form__filter-group-item">
+              <label class="revocation-form__control" for="patronymic-id">ОТЧЕСТВО*:</label>
+              <input class="revocation-form__control-input" type="text" name="patronymic" placeholder="Введите отчество"
+                id="patronymic-id">
+              <span class="visually-hidden">Ваше имя</span>
+            </li>
+          </ul>
+        </fieldset>
+
+        <fieldset class="revocation-form__filter-group">
+          <legend class="revocation-form__filter-group-title">Контактная информация:</legend>
+          <ul class="revocation-form__filter-group-list">
+            <li class="revocation-form__filter-group-item">
+              <label class="revocation-form__control" for="phone-id">Контактный телефон*:</label>
+              <input class="revocation-form__control-input" type="tel" name="phone" placeholder="Введите телефон"
+                id="phone-id" required>
+              <button class="revocation-form__control-button revocation-form__control-button--call"
+                type="button"></button>
+              <span class="visually-hidden">Ваше телефон</span>
+            </li>
+            <li class="revocation-form__filter-group-item">
+              <label class="revocation-form__control" for="email-id">Электронная почта*:</label>
+              <input class="revocation-form__control-input" type="email" name="email" placeholder="Введите e-mail"
+                id="email-id" required>
+              <button class="revocation-form__control-button revocation-form__control-button--email"
+                type="button"></button>
+              <span class="visually-hidden">Ваша электронная почта</span>
+            </li>
+          </ul>
+        </fieldset>
+
+        <fieldset class="revocation-form__filter-group">
+          <legend class="revocation-form__filter-group-title">Ваше Общее впечатление:</legend>
+          <ul class="revocation-form__filter-group-list">
+            <li class="revocation-form__filter-group-item">
+              <label class="revocation-form__control revocation-form__control-radio">
+                <input class="revocation-form__control-input visually-hidden" type="radio" name="product-group"
+                  value="good" checked>
+                <span class="revocation-form__control-mark"></span>
+                <span class="revocation-form__control-label">Скорее положительное</span>
+              </label>
+            </li>
+            <li class="revocation-form__filter-group-item">
+              <label class="revocation-form__control revocation-form__control-radio">
+                <input class="revocation-form__control-input visually-hidden" type="radio" name="product-group"
+                  value="negative">
+                <span class="revocation-form__control-mark"></span>
+                <span class="revocation-form__control-label">Скорее отрицательное</span>
+              </label>
+            </li>
+            <li class="revocation-form__filter-group-item">
+              <label class="revocation-form__control revocation-form__control-radio">
+                <input class="revocation-form__control-input visually-hidden" type="radio" name="product-group"
+                  value="difficult">
+                <span class="revocation-form__control-mark"></span>
+                <span class="revocation-form__control-label">Затрудняюсь ответить</span>
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+
+        <fieldset class="revocation-form__filter-group">
+          <legend class="revocation-form__filter-group-title">Посещенные достопримечательности:</legend>
+          <ul class="revocation-form__filter-group-list">
+            <li class="revocation-form__filter-group-item">
+              <label class="revocation-form__control revocation-form__control-radio">
+                <input class="revocation-form__control-input visually-hidden" type="checkbox" name="bridge" checked>
+                <span class="revocation-form__control-mark"></span>
+                <span class="revocation-form__control-label">Мост Дьявола</span>
+              </label>
+            </li>
+            <li class="revocation-form__filter-group-item">
+              <label class="revocation-form__control revocation-form__control-radio">
+                <input class="revocation-form__control-input visually-hidden" type="checkbox" name="mountain" checked>
+                <span class="revocation-form__control-mark"></span>
+                <span class="revocation-form__control-label">Гора-Колокол</span>
+              </label>
+            </li>
+            <li class="revocation-form__filter-group-item">
+              <label class="revocation-form__control revocation-form__control-radio">
+                <input class="revocation-form__control-input visually-hidden" type="checkbox" name="park" checked>
+                <span class="revocation-form__control-mark"></span>
+                <span class="revocation-form__control-label">Слайд-парк</span>
+              </label>
+            </li>
+            <li class="revocation-form__filter-group-item">
+              <label class="revocation-form__control revocation-form__control-radio">
+                <input class="revocation-form__control-input visually-hidden" type="checkbox" name="rocks">
+                <span class="revocation-form__control-mark"></span>
+                <span class="revocation-form__control-label">Красные скалы</span>
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+
+        <fieldset class="revocation-form__filter-group">
+          <legend class="revocation-form__filter-group-title visually-hidden">Опишите свои эмоции:</legend>
+          <label class="revocation-form__control" for="textarea-form-id">Опишите свои эмоции:</label>
+          <textarea class="revocation-form__control-input revocation-form__control-input--textarea" name="textarea"
+            id="textarea-form-id" placeholder="Опишите подробно все свои восторги"></textarea>
+          <span class="visually-hidden">Ваш подробный отзыв</span>
+          </li>
+        </fieldset>
+        <button class="revocation-form__control-button revocation-form__control-button--submit" type="submit">ОТПРАВИТЬ ОТЗЫВ</button>
+      </form>
+    </section>
