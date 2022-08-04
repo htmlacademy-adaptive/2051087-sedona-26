@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Седона: Каталог</title>
+</head>
+
+<body class="page__body page__form">
+  <header class="main-header">
+    <nav class="main-nav">
+      <a class="main-header__logo" href="#">
+        <img class="main-header__logo-image" src="img/header/logo-phone.svg" width="185" height="96"
+          alt="Город Седона.">
+      </a>
+      <button class="main-nav__toggle main-nav__toggle--active" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+      <button class="main-nav__toggle" type="button">
+        <span class="visually-hidden">Закрыть меню</span>
+      </button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a class="site-list__link">Главная</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="#">Фото и видео</a>
+          </li>
+        </ul>
+        <ul class="main-nav__list user-list">
+          <li class="user-list__item">
+            <a class="user-list__link" href="#">Форма Отзыва</a>
+          </li>
+          <li class="user-list__item">
+            <a class="user-list__link" href="#">HTML ACADEMY</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main class="main-container page-form-container">
+    <h1 class="visually-hidden">Каталог фотографий города Седона</h1>
+    <div class="main-picture main-picture-wrapper main-picture-wrapper--less">
+      <img class="main-picture__slogan" src="img/form/SEDONA.svg" width="229" height="39"
+        alt="Добро пожаловать в великолепное место Седона.">
+    </div>
+    <section class="introduction">
+      <h2 class="introduction__description">Оставьте свой отзыв</h2>
+      <p class="introduction__intro">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами
+        достопримечательностях</p>
+    </section>
+    <section class="catalog catalog-wrapper">
+      <h2 class="visually-hidden">Каталог фотографий Седоны</h2>
+      <ul class="catalog__list">
+        <li class="catalog__item">
+          <img class="catalog__item-image" src="img/catalog/open_spaces.jpg" width="280" height="280"
+            alt="Бескрайние просторы Седоны.">
+          <div class="catalog-item-wrapper">
+            <h3 class="catalog__item-title">Неродные просторы</h3>
+            <span class="catalog__item-author">Автор фото: Борис</span>
+          </div>
+          <div class="catalog-button-wrapper">
+            <button class="catalog__item-button" type="button"></button>
+            <output class="catalog__item-rating-field" name="rating">1350</output>
+          </div>
+        </li>
+        <li class="catalog__item">
+          <img class="catalog__item-image" src="img/catalog/vegetation.jpg" width="280" height="280"
+            alt="Завораживающая природа.">
+          <div class="catalog-item-wrapper">
+            <h3 class="catalog__item-title">Местная растительность</h3>
+            <span class="catalog__item-author">Автор фото: Сергей</span>
+          </div>
+          <div class="catalog-button-wrapper">
+            <button class="catalog__item-button" type="button"></button>
+            <output class="catalog__item-rating-field" name="rating">143</output>
+          </div>
+        </li>
+        <li class="catalog__item">
+          <img class="catalog__item-image" src="img/catalog/road.jpg" width="280" height="280"
+            alt="Невероятные дороги.">
+          <div class="catalog-item-wrapper">
+            <h3 class="catalog__item-title">Дорога на север</h3>
+            <span class="catalog__item-author">Автор фото: Петр</span>
+          </div>
+          <div class="catalog-button-wrapper">
+            <button class="catalog__item-button" type="button"></button>
+            <output class="catalog__item-rating-field" name="rating">96</output>
+          </div>
+        </li>
+        <li class="catalog__item">
+          <img class="catalog__item-image" src="img/catalog/evil_bridge.jpg" width="280" height="280" alt="Каньоны">
+          <div class="catalog-item-wrapper">
+            <h3 class="catalog__item-title">Мост дьявола</h3>
+            <span class="catalog__item-author">Автор фото: Антон</span>
+          </div>
+          <div class="catalog-button-wrapper"></div>
+          <button class="catalog__item-button" type="button"></button>
+          <output class="catalog__item-rating-field" name="rating">254</output>
+          </div>
+        </li>
+      </ul>
+    </section>
+    <section class="catalog-video-presentation catalog-video-presentation-wrapper">
+      <h2 class="catalog-video-presentation__intro">Все еще сомневаетесь?</h2>
+      <p class="catalog-video-presentation__description">Смотрите видеопрезентацию и скорее за билетами, пока они
+        не подорожали в очередной раз!</p>
+      <img class="catalog-video-presentation__img catalog-video-presentation__img--play"
+        src="img/catalog/video-mobile.jpg" alt="Видеопрезентация Седоны" width="280" height="177">
+    </section>
+  </main>
+  <footer class="page-footer">
+    <div class="footer-wrapper">
+      <span class="footer-tag">#visitSEDONA</span>
+      <ul class="navigation-list contacts-user">
+        <li class="contact-item"><a class="contact-link contact-link--vk" href="https://vk.com/htmlacademy">
+            <svg class="vk" aria-hidden="true" focusable="false" width="24" height="24" viewBox="0 0 24 24"
+              fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M24.116.948c.166-.546 0-.948-.795-.948h-2.625c-.668 0-.976.347-1.143.73 0 0-1.335 3.196-3.226 5.272-.612.602-.89.793-1.224.793-.167 0-.418-.191-.418-.738V.948c0-.656-.184-.948-.74-.948H9.817C9.4 0 9.15.304 9.15.593c0 .621.946.765 1.043 2.513v3.798c0 .833-.153.984-.487.984-.89 0-3.055-3.211-4.34-6.885C5.116.288 4.865 0 4.193 0H1.566c-.75 0-.9.347-.9.73 0 .682.89 4.07 4.145 8.551C6.981 12.341 10.036 14 12.82 14c1.67 0 1.875-.368 1.875-1.003v-2.313c0-.737.158-.884.687-.884.39 0 1.057.192 2.615 1.667C19.776 13.216 20.07 14 21.071 14h2.625c.75 0 1.126-.368.91-1.096-.238-.724-1.088-1.775-2.215-3.022-.612-.71-1.53-1.475-1.809-1.858-.389-.491-.278-.71 0-1.147 0 0 3.2-4.426 3.533-5.929h.001Z" />
+            </svg>
+            <span class="visually-hidden">VK</span></a>
+        </li>
+        <li class="contact-item"><a class="contact-link contact-link--telegram" href="https://t.me/htmlacademy ">
+            <svg class="telegram" aria-hidden="true" focusable="false" width="24" height="24" viewBox="0 0 24 24"
+              fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M16.79.1.84 6.25c-1.09.43-1.08 1.04-.2 1.31l4.1 1.28 9.47-5.98c.44-.27.85-.12.52.18L7.05 9.96l-.28 4.22c.41 0 .6-.19.83-.41l1.99-1.93 4.13 3.05c.77.42 1.31.2 1.5-.7l2.72-12.8c.28-1.12-.43-1.62-1.16-1.3Z" />
+            </svg>
+            <span class="visually-hidden">Telegram</span></a></li>
+        <li class="contact-item"><a class="contact-link contact-link--youtube"
+            href="https://www.youtube.com/user/htmlacademyru">
+            <svg class="youtube" aria-hidden="true" focusable="false" width="24" height="24" viewBox="0 0 24 24"
+              fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M18.94.5H3.51C1.65.5.33 2.1.33 3.9V14c0 1.9 1.32 3.5 3.18 3.5h15.65c1.64 0 3.17-1.6 3.17-3.4V3.9C22.11 2.1 20.8.5 18.94.5ZM7.99 13.04V4.96L15.33 9l-7.34 4.04Z" />
+            </svg>
+            <span class="visually-hidden">Youtube</span></a>
+        </li>
+      </ul>
+      <div class="contacts-author">
+        <h2 class="visually-hidden">Ссылка на сайт автора проекта</h2>
+        <span class="contacts-author-development">Разработано</span>
+        <a class="contacts-author-link contacts-author-link--academy" href="https://htmlacademy.ru/">
+          <svg class="html-academy" aria-hidden="true" focusable="false" width="27" height="35" viewBox="0 0 27 35"
+            fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M13.6 0h-.1L0 1.4v24.7l13.5 8 13.4-8V1.4L13.6 0ZM25 12.1 13.5 5.3v-.1h-.1l-.1-.1v.1L1.9 12.1v-9l11.5-1.2L25 3.1v9ZM13.4 6.8l11.5 6.7-4.5 2.6-7.1-4.2v1.4l5.9 3.5-.9.5-5-3v1.4l3.8 2.3-.8.5-3-1.8v1.4l1.9 1.1-1.8 1.1L2 13.6l11.4-6.8ZM1.9 15.1l11.4 6.8v1l-7.9-4.7v1.4l8 4.8v1.1l-8-4.7v1.4l8 4.8 8.1-4.9v-5.2l3.4-2v10l-11.5 6.9L1.9 25v-9.9Z" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
