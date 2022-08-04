@@ -15,10 +15,10 @@
         <img class="main-header__logo-image" src="img/header/logo-phone.svg" width="185" height="96"
           alt="Город Седона.">
       </a>
-      <button class="main-nav__toggle" type="button">
+      <button class="main-nav__toggle main-nav__toggle--active" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
-      <button class="main-nav__toggle main-nav__toggle--close" type="button">
+      <button class="main-nav__toggle" type="button">
         <span class="visually-hidden">Закрыть меню</span>
       </button>
       <div class="main-nav__wrapper">
@@ -46,12 +46,11 @@
     <div class="main-picture main-picture-wrapper main-picture-wrapper--less">
       <img class="main-picture__slogan" src="img/form/SEDONA.svg" width="229" height="39"
         alt="Добро пожаловать в великолепное место Седона.">
-      <div class="main-picture__decoration"></div>
     </div>
-    <section class="catalog-description catalog-description-wrapper">
-      <h2 class="form-description-intro">Оставьте свой отзыв</h2>
-      <p class="form-description-request">Помогите нашим отелям стать лучше!<br> оставьте отзыв о них, а также о<br>
-        посещенных вами<br> достопримечательностях</p>
+    <section class="introduction">
+      <h2 class="introduction__description">Оставьте свой отзыв</h2>
+      <p class="introduction__intro">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами
+        достопримечательностях</p>
     </section>
     <section class="catalog catalog-wrapper">
       <h2 class="visually-hidden">Каталог фотографий Седоны</h2>
@@ -59,40 +58,56 @@
         <li class="catalog__item">
           <img class="catalog__item-image" src="img/catalog/open_spaces.jpg" width="280" height="280"
             alt="Бескрайние просторы Седоны.">
-          <h3 class="catalog__item-title">Неродные просторы</h3>
-          <span class="catalog__item-author">Автор фото: Борис</span>
-          <button class="catalog__item-button" type="button"></button>
-          <output class="catalog__item-rating-field" name="rating">1350</output>
+          <div class="catalog-item-wrapper">
+            <h3 class="catalog__item-title">Неродные просторы</h3>
+            <span class="catalog__item-author">Автор фото: Борис</span>
+          </div>
+          <div class="catalog-button-wrapper">
+            <button class="catalog__item-button" type="button"></button>
+            <output class="catalog__item-rating-field" name="rating">1350</output>
+          </div>
         </li>
         <li class="catalog__item">
           <img class="catalog__item-image" src="img/catalog/vegetation.jpg" width="280" height="280"
             alt="Завораживающая природа.">
-          <h3 class="catalog__item-title">Местная растительность</h3>
-          <span class="catalog__item-author">Автор фото: Сергей</span>
-          <button class="catalog__item-button" type="button"></button>
-          <output class="catalog__item-rating-field" name="rating">143</output>
+          <div class="catalog-item-wrapper">
+            <h3 class="catalog__item-title">Местная растительность</h3>
+            <span class="catalog__item-author">Автор фото: Сергей</span>
+          </div>
+          <div class="catalog-button-wrapper">
+            <button class="catalog__item-button" type="button"></button>
+            <output class="catalog__item-rating-field" name="rating">143</output>
+          </div>
         </li>
         <li class="catalog__item">
           <img class="catalog__item-image" src="img/catalog/road.jpg" width="280" height="280"
             alt="Невероятные дороги.">
-          <h3 class="catalog__item-title">Дорога на север</h3>
-          <span class="catalog__item-author">Автор фото: Петр</span>
-          <button class="catalog__item-button" type="button"></button>
-          <output class="catalog__item-rating-field" name="rating">96</output>
+          <div class="catalog-item-wrapper">
+            <h3 class="catalog__item-title">Дорога на север</h3>
+            <span class="catalog__item-author">Автор фото: Петр</span>
+          </div>
+          <div class="catalog-button-wrapper">
+            <button class="catalog__item-button" type="button"></button>
+            <output class="catalog__item-rating-field" name="rating">96</output>
+          </div>
         </li>
         <li class="catalog__item">
           <img class="catalog__item-image" src="img/catalog/evil_bridge.jpg" width="280" height="280" alt="Каньоны">
-          <h3 class="catalog__item-title">Мост дьявола</h3>
-          <span class="catalog__item-author">Автор фото: Антон</span>
+          <div class="catalog-item-wrapper">
+            <h3 class="catalog__item-title">Мост дьявола</h3>
+            <span class="catalog__item-author">Автор фото: Антон</span>
+          </div>
+          <div class="catalog-button-wrapper"></div>
           <button class="catalog__item-button" type="button"></button>
           <output class="catalog__item-rating-field" name="rating">254</output>
+          </div>
         </li>
       </ul>
     </section>
     <section class="catalog-video-presentation catalog-video-presentation-wrapper">
       <h2 class="catalog-video-presentation__intro">Все еще сомневаетесь?</h2>
-      <p class="catalog-video-presentation__description">Смотрите видеопрезентацию и<br> скорее за билетами, пока они
-        не<br> подорожали в очередной раз!</p>
+      <p class="catalog-video-presentation__description">Смотрите видеопрезентацию и скорее за билетами, пока они
+        не подорожали в очередной раз!</p>
       <img class="catalog-video-presentation__img catalog-video-presentation__img--play"
         src="img/catalog/video-mobile.jpg" alt="Видеопрезентация Седоны" width="280" height="177">
     </section>
@@ -126,17 +141,17 @@
             <span class="visually-hidden">Youtube</span></a>
         </li>
       </ul>
-    </div>
-    <div class="contacts-author">
-      <h2 class="visually-hidden">Ссылка на сайт автора проекта</h2>
-      <span class="contacts-author-development">Разработано</span>
-      <a class="contacts-author-link contacts-author-link--academy" href="https://htmlacademy.ru/">
-        <svg class="html-academy" aria-hidden="true" focusable="false" width="27" height="35" viewBox="0 0 27 35"
-          fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-          <path
-            d="M13.6 0h-.1L0 1.4v24.7l13.5 8 13.4-8V1.4L13.6 0ZM25 12.1 13.5 5.3v-.1h-.1l-.1-.1v.1L1.9 12.1v-9l11.5-1.2L25 3.1v9ZM13.4 6.8l11.5 6.7-4.5 2.6-7.1-4.2v1.4l5.9 3.5-.9.5-5-3v1.4l3.8 2.3-.8.5-3-1.8v1.4l1.9 1.1-1.8 1.1L2 13.6l11.4-6.8ZM1.9 15.1l11.4 6.8v1l-7.9-4.7v1.4l8 4.8v1.1l-8-4.7v1.4l8 4.8 8.1-4.9v-5.2l3.4-2v10l-11.5 6.9L1.9 25v-9.9Z" />
-        </svg>
-      </a>
+      <div class="contacts-author">
+        <h2 class="visually-hidden">Ссылка на сайт автора проекта</h2>
+        <span class="contacts-author-development">Разработано</span>
+        <a class="contacts-author-link contacts-author-link--academy" href="https://htmlacademy.ru/">
+          <svg class="html-academy" aria-hidden="true" focusable="false" width="27" height="35" viewBox="0 0 27 35"
+            fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M13.6 0h-.1L0 1.4v24.7l13.5 8 13.4-8V1.4L13.6 0ZM25 12.1 13.5 5.3v-.1h-.1l-.1-.1v.1L1.9 12.1v-9l11.5-1.2L25 3.1v9ZM13.4 6.8l11.5 6.7-4.5 2.6-7.1-4.2v1.4l5.9 3.5-.9.5-5-3v1.4l3.8 2.3-.8.5-3-1.8v1.4l1.9 1.1-1.8 1.1L2 13.6l11.4-6.8ZM1.9 15.1l11.4 6.8v1l-7.9-4.7v1.4l8 4.8v1.1l-8-4.7v1.4l8 4.8 8.1-4.9v-5.2l3.4-2v10l-11.5 6.9L1.9 25v-9.9Z" />
+          </svg>
+        </a>
+      </div>
     </div>
   </footer>
 </body>
