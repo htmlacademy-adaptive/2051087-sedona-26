@@ -9,6 +9,11 @@
 @import "./blocks/footer/footer-wrapper.less";
 @import "./blocks/footer/navigation-contact-list.less";
 @import "./blocks/footer/page-footer.less";
+@import "./blocks/footer/vk.less";
+@import "./blocks/footer/telegram.less";
+@import "./blocks/footer/youtube.less";
+@import "./blocks/footer/contacts-author-development.less";
+@import "./blocks/footer/html-academy.less";
 @import "./blocks/index/additional-reason-item.less";
 @import "./blocks/index/additional-reason-list.less";
 @import "./blocks/index/advantages-item.less";
@@ -36,7 +41,42 @@
 @import "./blocks/main-picture.less";
 @import "./blocks/visually-hidden.less";
 
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/ptsans.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/ptsansbold.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/ptsans.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/ptsansbold.woff") format("woff");
+  font-display: swap;
+}
+
 .page__body {
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 26px;
   background-color: #e5e5e5;
   color: #000000;
   min-height: 100%;
