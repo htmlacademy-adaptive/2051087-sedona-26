@@ -1,3 +1,5 @@
+@import "./blocks/fonts.less";
+@import "./blocks/mixins/text-style.less";
 @import "./blocks/header/main-header.less";
 @import "./blocks/header/main-nav.less";
 @import "./blocks/header/site-list.less";
@@ -42,38 +44,6 @@
 @import "./blocks/visually-hidden.less";
 @import "./blocks/modal/modal-container.less";
 
-@font-face {
-  font-family: "PT Sans";
-  font-style: normal;
-  font-weight: 400;
-  src: url("../fonts/ptsans.woff2") format("woff2");
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "PT Sans";
-  font-style: normal;
-  font-weight: 700;
-  src: url("../fonts/ptsansbold.woff2") format("woff2");
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "PT Sans";
-  font-style: normal;
-  font-weight: 400;
-  src: url("../fonts/ptsans.woff") format("woff");
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "PT Sans";
-  font-style: normal;
-  font-weight: 700;
-  src: url("../fonts/ptsansbold.woff") format("woff");
-  font-display: swap;
-}
-
 .page__body {
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
@@ -82,4 +52,8 @@
   color: #000000;
   min-height: 100%;
   margin: 0;
+}
+
+.visually-hidden {
+  .visually-hidden();
 }
