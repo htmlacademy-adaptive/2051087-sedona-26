@@ -2,6 +2,7 @@
 <html class="page" lang="ru">
 
 <head>
+  <link rel="stylesheet" href="css/style.css">
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,7 +12,7 @@
 <body class="page__body page__form">
   <header class="main-header">
     <nav class="main-nav">
-      <a class="main-header__logo" href="#">
+      <a class="main-header__logo" href="index.html">
         <img class="main-header__logo-image" src="img/header/logo-phone.svg" width="185" height="96"
           alt="Город Седона.">
       </a>
@@ -24,7 +25,7 @@
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
-            <a class="site-list__link">Главная</a>
+            <a class="site-list__link" href="index.html">Главная</a>
           </li>
           <li class="site-list__item">
             <a class="site-list__link" href="#">Фото и видео</a>
@@ -32,7 +33,7 @@
         </ul>
         <ul class="main-nav__list user-list">
           <li class="user-list__item">
-            <a class="user-list__link" href="#">Форма Отзыва</a>
+            <a class="user-list__link" href="form.html">Форма Отзыва</a>
           </li>
           <li class="user-list__item">
             <a class="user-list__link" href="#">HTML ACADEMY</a>
@@ -48,9 +49,9 @@
         alt="Добро пожаловать в великолепное место Седона.">
     </div>
     <section class="introduction">
-      <h2 class="introduction__description">Оставьте свой отзыв</h2>
-      <p class="introduction__intro">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами
-        достопримечательностях</p>
+      <h2 class="introduction__description">Фото и видео</h2>
+      <p class="introduction__intro">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о
+        политике и экономике</p>
     </section>
     <section class="catalog catalog-wrapper">
       <h2 class="visually-hidden">Каталог фотографий Седоны</h2>
@@ -63,7 +64,13 @@
             <span class="catalog__item-author">Автор фото: Борис</span>
           </div>
           <div class="catalog-button-wrapper">
-            <button class="catalog__item-button" type="button"></button>
+            <button class="catalog__item-button" type="button" aria-label="Поставить лайк.">
+              <svg class="like" width="23" height="21" viewBox="0 0 23 21" fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg">
+                <path opacity=".3"
+                  d="m12.96 3.78-.62 3.05-.63 2.62h9.09v2.2l-3.03 7.25h-9.4V8.4l4.6-4.62ZM2.1 10.5v8.4-8.4ZM13.8 0 6.9 6.93c-.42.32-.63.84-.63 1.47v10.5c0 1.16.94 2.1 2.1 2.1h9.4c.84 0 1.57-.52 1.88-1.26l3.14-7.45c.1-.21.1-.53.1-.74v-2.1H23a2.1 2.1 0 0 0-2.1-2.1h-6.58l1.05-4.83v-.31c0-.43-.21-.84-.42-1.16L13.8 0ZM4.18 8.4H0V21h4.18V8.4Z" />
+              </svg>
+            </button>
             <output class="catalog__item-rating-field" name="rating">1350</output>
           </div>
         </li>
@@ -75,7 +82,13 @@
             <span class="catalog__item-author">Автор фото: Сергей</span>
           </div>
           <div class="catalog-button-wrapper">
-            <button class="catalog__item-button" type="button"></button>
+            <button class="catalog__item-button" type="button">
+              <svg class="like" width="23" height="21" viewBox="0 0 23 21" fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg">
+                <path opacity=".3"
+                  d="m12.96 3.78-.62 3.05-.63 2.62h9.09v2.2l-3.03 7.25h-9.4V8.4l4.6-4.62ZM2.1 10.5v8.4-8.4ZM13.8 0 6.9 6.93c-.42.32-.63.84-.63 1.47v10.5c0 1.16.94 2.1 2.1 2.1h9.4c.84 0 1.57-.52 1.88-1.26l3.14-7.45c.1-.21.1-.53.1-.74v-2.1H23a2.1 2.1 0 0 0-2.1-2.1h-6.58l1.05-4.83v-.31c0-.43-.21-.84-.42-1.16L13.8 0ZM4.18 8.4H0V21h4.18V8.4Z" />
+              </svg>
+            </button>
             <output class="catalog__item-rating-field" name="rating">143</output>
           </div>
         </li>
@@ -87,7 +100,13 @@
             <span class="catalog__item-author">Автор фото: Петр</span>
           </div>
           <div class="catalog-button-wrapper">
-            <button class="catalog__item-button" type="button"></button>
+            <button class="catalog__item-button" type="button">
+              <svg class="like" width="23" height="21" viewBox="0 0 23 21" fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg">
+                <path opacity=".3"
+                  d="m12.96 3.78-.62 3.05-.63 2.62h9.09v2.2l-3.03 7.25h-9.4V8.4l4.6-4.62ZM2.1 10.5v8.4-8.4ZM13.8 0 6.9 6.93c-.42.32-.63.84-.63 1.47v10.5c0 1.16.94 2.1 2.1 2.1h9.4c.84 0 1.57-.52 1.88-1.26l3.14-7.45c.1-.21.1-.53.1-.74v-2.1H23a2.1 2.1 0 0 0-2.1-2.1h-6.58l1.05-4.83v-.31c0-.43-.21-.84-.42-1.16L13.8 0ZM4.18 8.4H0V21h4.18V8.4Z" />
+              </svg>
+            </button>
             <output class="catalog__item-rating-field" name="rating">96</output>
           </div>
         </li>
@@ -97,8 +116,14 @@
             <h3 class="catalog__item-title">Мост дьявола</h3>
             <span class="catalog__item-author">Автор фото: Антон</span>
           </div>
-          <div class="catalog-button-wrapper"></div>
-          <button class="catalog__item-button" type="button"></button>
+          <div class="catalog-button-wrapper">
+          <button class="catalog__item-button" type="button">
+            <svg class="like" width="23" height="21" viewBox="0 0 23 21" fill="currentColor"
+              xmlns="http://www.w3.org/2000/svg">
+              <path opacity=".3"
+                d="m12.96 3.78-.62 3.05-.63 2.62h9.09v2.2l-3.03 7.25h-9.4V8.4l4.6-4.62ZM2.1 10.5v8.4-8.4ZM13.8 0 6.9 6.93c-.42.32-.63.84-.63 1.47v10.5c0 1.16.94 2.1 2.1 2.1h9.4c.84 0 1.57-.52 1.88-1.26l3.14-7.45c.1-.21.1-.53.1-.74v-2.1H23a2.1 2.1 0 0 0-2.1-2.1h-6.58l1.05-4.83v-.31c0-.43-.21-.84-.42-1.16L13.8 0ZM4.18 8.4H0V21h4.18V8.4Z" />
+            </svg>
+          </button>
           <output class="catalog__item-rating-field" name="rating">254</output>
           </div>
         </li>
@@ -115,7 +140,7 @@
   <footer class="page-footer">
     <div class="footer-wrapper">
       <span class="footer-tag">#visitSEDONA</span>
-      <ul class="navigation-list contacts-user">
+      <ul class="navigation-contact-list">
         <li class="contact-item"><a class="contact-link contact-link--vk" href="https://vk.com/htmlacademy">
             <svg class="vk" aria-hidden="true" focusable="false" width="24" height="24" viewBox="0 0 24 24"
               fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -144,7 +169,7 @@
       <div class="contacts-author">
         <h2 class="visually-hidden">Ссылка на сайт автора проекта</h2>
         <span class="contacts-author-development">Разработано</span>
-        <a class="contacts-author-link contacts-author-link--academy" href="https://htmlacademy.ru/">
+        <a class="contacts-author__link" href="https://htmlacademy.ru/">
           <svg class="html-academy" aria-hidden="true" focusable="false" width="27" height="35" viewBox="0 0 27 35"
             fill="currentColor" xmlns="http://www.w3.org/2000/svg">
             <path

@@ -2,6 +2,7 @@
 <html class="page" lang="ru">
 
 <head>
+  <link rel="stylesheet" href="css/style.css">
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,7 +12,7 @@
 <body class="page__body page__form">
   <header class="main-header">
     <nav class="main-nav">
-      <a class="main-header__logo" href="#">
+      <a class="main-header__logo" href="index.html">
         <img class="main-header__logo-image" src="img/header/logo-phone.svg" width="185" height="96"
           alt="Город Седона.">
       </a>
@@ -24,10 +25,10 @@
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
-            <a class="site-list__link">Главная</a>
+            <a class="site-list__link" href="index.html">Главная</a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__link" href="#">Фото и видео</a>
+            <a class="site-list__link" href="catalog.html">Фото и видео</a>
           </li>
         </ul>
         <ul class="main-nav__list user-list">
@@ -131,28 +132,28 @@
           <div class="revocation-form__filter-group-item">
             <label class="revocation-form__control revocation-form__control-radio">
               <input class="revocation-form__control-input visually-hidden" type="checkbox" name="bridge" checked>
-              <span class="revocation-form__control-mark"></span>
+              <span class="revocation-form__control-checkbox-mark"></span>
               <span class="revocation-form__control-label">Мост Дьявола</span>
             </label>
           </div>
           <div class="revocation-form__filter-group-item">
             <label class="revocation-form__control revocation-form__control-radio">
               <input class="revocation-form__control-input visually-hidden" type="checkbox" name="mountain" checked>
-              <span class="revocation-form__control-mark"></span>
+              <span class="revocation-form__control-checkbox-mark"></span>
               <span class="revocation-form__control-label">Гора-Колокол</span>
             </label>
           </div>
           <div class="revocation-form__filter-group-item">
             <label class="revocation-form__control revocation-form__control-radio">
               <input class="revocation-form__control-input visually-hidden" type="checkbox" name="park" checked>
-              <span class="revocation-form__control-mark"></span>
+              <span class="revocation-form__control-checkbox-mark"></span>
               <span class="revocation-form__control-label">Слайд-парк</span>
             </label>
           </div>
           <div class="revocation-form__filter-group-item">
             <label class="revocation-form__control revocation-form__control-radio">
               <input class="revocation-form__control-input visually-hidden" type="checkbox" name="rocks">
-              <span class="revocation-form__control-mark"></span>
+              <span class="revocation-form__control-checkbox-mark"></span>
               <span class="revocation-form__control-label">Красные скалы</span>
             </label>
           </div>
@@ -160,13 +161,13 @@
 
         <fieldset class="revocation-form__filter-group">
           <legend class="revocation-form__filter-group-title visually-hidden">Опишите свои эмоции:</legend>
-          <label class="revocation-form__control" for="textarea-form-id">Опишите свои эмоции:</label>
+          <label class="revocation-form__control-textarea" for="textarea-form-id">Опишите свои эмоции:</label>
           <textarea class="revocation-form__control-input revocation-form__control-input--textarea" name="textarea"
             id="textarea-form-id" placeholder="Опишите подробно все свои восторги"></textarea>
           <span class="visually-hidden">Ваш подробный отзыв</span>
 
         </fieldset>
-        <button class=" button revocation-form__control-button" type="submit">ОТПРАВИТЬ
+        <button class="button revocation-form__control-button" type="submit">ОТПРАВИТЬ
           ОТЗЫВ</button>
         <span class="revocation-form__required">* — обязательные поля</span>
       </form>
@@ -175,7 +176,7 @@
   <footer class="page-footer">
     <div class="footer-wrapper">
       <span class="footer-tag">#visitSEDONA</span>
-      <ul class="navigation-list contacts-user">
+      <ul class="navigation-contact-list">
         <li class="contact-item"><a class="contact-link contact-link--vk" href="https://vk.com/htmlacademy">
             <svg class="vk" aria-hidden="true" focusable="false" width="24" height="24" viewBox="0 0 24 24"
               fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -204,7 +205,7 @@
       <div class="contacts-author">
         <h2 class="visually-hidden">Ссылка на сайт автора проекта</h2>
         <span class="contacts-author-development">Разработано</span>
-        <a class="contacts-author-link contacts-author-link--academy" href="https://htmlacademy.ru/">
+        <a class="contacts-author__link" href="https://htmlacademy.ru/">
           <svg class="html-academy" aria-hidden="true" focusable="false" width="27" height="35" viewBox="0 0 27 35"
             fill="currentColor" xmlns="http://www.w3.org/2000/svg">
             <path
@@ -222,7 +223,7 @@
         <h2 class="modal-container__modal-title">ЧТО-ТО ПОШЛО НЕ ТАК!</h2>
         <p class="modal-container__modal-description">Проверьте поля, выделенные красным, скорее всего вы забыли их
           заполнить</p>
-        <button class="modal-container__modal-button modal-close-error-button" type="button">OK</button>
+        <button class="button modal-container__modal-button modal-close-error-button" type="button">OK</button>
       </section>
     </div>
   </div>
@@ -234,7 +235,7 @@
         <h2 class="modal-container__modal-title">Ваш отзыв отправлен!</h2>
         <p class="modal-container__modal-description">Спасибо за ваше участие, ваш отзыв уже поступил к нам.В ближайшее
           время мы опубликуем его на сайте.</p>
-        <button class="modal-container__modal-button modal-close-success-button" type="button">ЗАКРЫТЬ ОКНО</button>
+        <button class="button modal-container__modal-button modal-close-success-button" type="button">ЗАКРЫТЬ ОКНО</button>
       </section>
     </div>
   </div>
