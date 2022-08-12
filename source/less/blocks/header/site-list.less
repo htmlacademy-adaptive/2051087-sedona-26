@@ -18,3 +18,36 @@
   padding: 17px 108px 12px 108px;
   display: block;
 }
+
+@media (min-width: @tablet-width) {
+  .site-list {
+    display: flex;
+    order: 1;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .site-list__item {
+    &:first-of-type {
+      .site-list__link {
+        padding: 17px 47px;
+      }
+    }
+    background-color: #ffffff;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .main-nav__list {
+    margin-right: 153px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .site-list__link {
+    color: #000000;
+    padding: 17px 27px;
+    font-size: 14px;
+    line-height: 21px;
+  }
+}

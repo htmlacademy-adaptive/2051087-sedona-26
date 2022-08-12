@@ -4,3 +4,24 @@
   object-fit: contain;
   margin: 0 auto;
 }
+
+@media (min-width: @tablet-width) {
+  .main-nav {
+    display: flex;
+    justify-content: center;
+    position: relative;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .main-header__logo {
+    order: 2;
+    position: absolute;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .main-nav__toggle {
+    display: none;
+  }
+}

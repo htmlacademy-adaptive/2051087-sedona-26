@@ -18,3 +18,31 @@
   padding: 17px 108px 12px 108px;
   display: block;
 }
+
+@media (min-width: @tablet-width) {
+  .user-list {
+    display: flex;
+    order: 3;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .user-list__item {
+    &:first-of-type {
+      .user-list__link {
+        padding: 17px 24px;
+      }
+    }
+    background-color: #ffffff;
+  }
+}
+
+
+@media (min-width: @tablet-width) {
+  .user-list__link {
+    color: #000000;
+    padding: 17px 27px;
+    font-size: 14px;
+    line-height: 21px;
+  }
+}
