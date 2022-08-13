@@ -17,3 +17,25 @@
   text-align: center;
   color: #333333;
 }
+
+@media (min-width: @tablet-width) {
+  .introduction {
+    padding: 47px 124px 56px;
+  }
+
+  .introduction__description {
+    .button-text-style();
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .introduction {
+    padding: 62px 357px 35px;
+  }
+
+  .introduction__description {
+    .button-text-style();
+    margin-bottom: 30px;
+  }
+}

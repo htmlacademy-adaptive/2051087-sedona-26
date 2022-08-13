@@ -23,6 +23,7 @@
   .site-list {
     display: flex;
     order: 1;
+    width: 306px;
   }
 }
 
@@ -34,6 +35,7 @@
       }
     }
     background-color: #ffffff;
+    box-shadow: none;
   }
 }
 
@@ -49,5 +51,34 @@
     padding: 17px 27px;
     font-size: 14px;
     line-height: 21px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-nav__list {
+    margin-right: 239px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .site-list {
+    width: 480px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .site-list__item {
+    &:first-of-type {
+      .site-list__link {
+        padding: 17px 91px;
+      }
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .site-list__link {
+    color: #000000;
+    padding: 17px 71px;
   }
 }

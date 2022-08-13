@@ -23,6 +23,7 @@
   .user-list {
     display: flex;
     order: 3;
+    width: 306px;
   }
 }
 
@@ -34,6 +35,7 @@
       }
     }
     background-color: #ffffff;
+    box-shadow: none;
   }
 }
 
@@ -44,5 +46,28 @@
     padding: 17px 27px;
     font-size: 14px;
     line-height: 21px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .user-list {
+    width: 480px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .user-list__item {
+    &:first-of-type {
+      .user-list__link {
+        padding: 17px 68px;
+      }
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .user-list__link {
+    color: #000000;
+    padding: 17px 71px;
   }
 }

@@ -22,3 +22,27 @@
   color: #333333;
   margin: 0;
 }
+
+@media (min-width: @tablet-width) {
+  .advantages-item {
+    width: 256px;
+    flex-grow: 1;
+    padding: 60px 36px 59px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .advantages-item {
+    width: 400px;
+    flex-grow: 1;
+    padding: 60px 36px 79px;
+  }
+
+  .advantages-item__image {
+    margin-bottom: 27px;
+  }
+
+  .advantages-item__title {
+    margin-bottom: 30px;
+  }
+}
