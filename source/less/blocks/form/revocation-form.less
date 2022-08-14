@@ -4,30 +4,6 @@
 }
 
 .revocation-form__filter-group {
-  &:not(:last-of-type)::before {
-    content: "";
-    position: absolute;
-    height: 1px;
-    width: 100%;
-    background-color: #e5e5e5;
-    top: -69px;
-    bottom: 0;
-    right: 0;
-    left: 0;
-  }
-
-  &:last-of-type::before {
-    content: "";
-    position: absolute;
-    height: 1px;
-    width: 100%;
-    background-color: #e5e5e5;
-    top: -18px;
-    bottom: 0;
-    right: 0;
-    left: 0;
-  }
-
   &:last-of-type {
     margin-bottom: 56px;
   }
@@ -40,9 +16,186 @@
   margin-bottom: 24px;
 }
 
-// .revocation-form__filter-group:not(:last-child) {
-//   margin-bottom: 24px;
-// }
+@media (min-width: @tablet-width) {
+  .revocation-form__filter-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 648px;
+    box-sizing: border-box;
+    margin: 0 auto;
+
+    .revocation-form__filter-group:nth-of-type(2) {
+      align-items: flex-end;
+
+      .revocation-form__filter-group-title {
+        padding-right: 50px;
+        margin-bottom: 25px;
+      }
+
+      .revocation-form__control--less:nth-of-type(1) {
+        margin-right: 103px;
+      }
+
+      .revocation-form__control--less:nth-of-type(2) {
+        margin-right: 116px;
+      }
+
+      .revocation-form__filter-group-item--less {
+        margin-bottom: 22px;
+      }
+    }
+
+    .revocation-form__filter-group {
+      &:first-of-type::before {
+        content: "";
+        position: absolute;
+        /* height: 338px; */
+        width: 1px;
+        background-color: #e5e5e5;
+        top: -52px;
+        bottom: 0;
+        right: 0;
+        left: 322px;
+      }
+    }
+
+    // .revocation-form__control--less {
+    //   margin-right: 123px;
+    //   margin-left: 66px;
+    // }
+  }
+  position: relative;
+}
+
+@media (min-width: @tablet-width) {
+  .revocation-form__filter-group--radio {
+    flex-direction: row;
+    width: 648px;
+    flex-wrap: wrap;
+    margin: auto;
+
+    .revocation-form__filter-group-title {
+      padding-bottom: 28px;
+      position: relative;
+      font-size: 21px;
+      line-height: 26px;
+
+      &::before {
+        content: "";
+        position: absolute;
+        height: 1px;
+        width: 123px;
+        background-color: #e5e5e5;
+        top: 33px;
+        bottom: 0;
+        right: 0;
+        left: -182px;
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        height: 1px;
+        width: 123px;
+        background-color: #e5e5e5;
+        top: 33px;
+        bottom: 0;
+        right: 0;
+        left: 339px;
+      }
+    }
+  }
+
+  .revocation-form__filter-group-item--radio:nth-of-type(odd) {
+    margin-left: 22px;
+    width: 280px;
+  }
+
+  .revocation-form__filter-group-item--radio:nth-of-type(even) {
+    margin-left: 16px;
+    width: 280px;
+  }
+
+  .revocation-form__filter-group--checkbox {
+    flex-direction: row;
+    align-items: center;
+    width: 648px;
+    margin: auto;
+    flex-wrap: wrap;
+
+    .revocation-form__filter-group-title {
+      font-size: 21px;
+      line-height: 26px;
+      width: 308px;
+      padding-bottom: 28px;
+
+      &::before {
+        content: "";
+        position: absolute;
+        height: 1px;
+        width: 123px;
+        background-color: #e5e5e5;
+        top: 47px;
+        bottom: 0;
+        right: 0;
+        left: 4px;
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        height: 1px;
+        width: 123px;
+        background-color: #e5e5e5;
+        top: 47px;
+        bottom: 0;
+        right: 0;
+        left: 525px;
+      }
+    }
+  }
+
+  .revocation-form__filter-group-item--checkbox {
+    width: 224px;
+
+    &:nth-of-type(odd) {
+      margin-left: 71px;
+    }
+
+    &:nth-of-type(even) {
+      margin-left: 33px;
+    }
+  }
+}
+
+@media (max-width: @tablet-width) {
+  .revocation-form__filter-group {
+    &:not(:last-of-type)::before {
+      content: "";
+      position: absolute;
+      height: 1px;
+      width: 100%;
+      background-color: #e5e5e5;
+      top: -69px;
+      bottom: 0;
+      right: 0;
+      left: 0;
+    }
+
+    &:last-of-type::before {
+      content: "";
+      position: absolute;
+      height: 1px;
+      width: 100%;
+      background-color: #e5e5e5;
+      top: -18px;
+      bottom: 0;
+      right: 0;
+      left: 0;
+    }
+  }
+}
 
 .revocation-form__filter-group-title {
   .primary-text-style();
@@ -189,4 +342,55 @@
   color: rgba(51, 51, 51, 0.6);
   display: block;
   margin-left: 143px;
+}
+
+@media (min-width: @tablet-width) {
+  .revocation-form__control-textarea {
+    padding-top: 16px;
+    font-size: 21px;
+    line-height: 26px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      height: 1px;
+      width: 123px;
+      background-color: #e5e5e5;
+      top: 29px;
+      bottom: 0;
+      right: 0;
+      left: 90px;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      height: 1px;
+      width: 123px;
+      background-color: #e5e5e5;
+      top: 29px;
+      bottom: 0;
+      right: 0;
+      left: 612px;
+    }
+  }
+
+  .revocation-form__control-input--textarea {
+    width: 648px;
+  }
+
+  .revocation-form__textarea-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 648px;
+    margin: 0 auto;
+    padding-bottom: 28px;
+  }
+
+  .button.button--submit {
+    width: 324px;
+    padding: 18px 60px 13px 49px;
+    margin: 0;
+  }
 }

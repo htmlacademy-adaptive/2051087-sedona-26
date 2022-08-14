@@ -59,51 +59,55 @@
       <section class="revocation-form revocation-form-wrapper">
         <h2 class="visually-hidden">Форма отзыва</h2>
         <form class="revocation-form__filter" action="https://echo.htmlacademy.ru/" method="post">
-          <fieldset class="revocation-form__filter-group">
-            <legend class="revocation-form__filter-group-title">Представьтесь:</legend>
-            <div class="revocation-form__filter-group-item">
-              <label class="revocation-form__control" for="name-id">ИМЯ*:</label>
-              <input class="revocation-form__control-input" type="text" name="name" placeholder="Введите имя"
-                id="name-id" required>
-              <span class="visually-hidden">Ваше имя</span>
-            </div>
-            <div class="revocation-form__filter-group-item">
-              <label class="revocation-form__control" for="surname-id">ФАМИЛИЯ*:</label>
-              <input class="revocation-form__control-input" type="text" name="surname" placeholder="Введите фамилию"
-                id="surname-id" required>
-              <span class="visually-hidden">Ваше имя</span>
-            </div>
-            <div class="revocation-form__filter-group-item">
-              <label class="revocation-form__control" for="patronymic-id">ОТЧЕСТВО*:</label>
-              <input class="revocation-form__control-input" type="text" name="patronymic" placeholder="Введите отчество"
-                id="patronymic-id">
-              <span class="visually-hidden">Ваше имя</span>
-            </div>
-          </fieldset>
+          <div class="revocation-form__filter-wrapper">
+            <fieldset class="revocation-form__filter-group">
+              <legend class="revocation-form__filter-group-title">Представьтесь:</legend>
+              <div class="revocation-form__filter-group-item">
+                <label class="revocation-form__control" for="name-id">ИМЯ*:</label>
+                <input class="revocation-form__control-input" type="text" name="name" placeholder="Введите имя"
+                  id="name-id" required>
+                <span class="visually-hidden">Ваше имя</span>
+              </div>
+              <div class="revocation-form__filter-group-item">
+                <label class="revocation-form__control" for="surname-id">ФАМИЛИЯ*:</label>
+                <input class="revocation-form__control-input" type="text" name="surname" placeholder="Введите фамилию"
+                  id="surname-id" required>
+                <span class="visually-hidden">Ваше имя</span>
+              </div>
+              <div class="revocation-form__filter-group-item">
+                <label class="revocation-form__control" for="patronymic-id">ОТЧЕСТВО*:</label>
+                <input class="revocation-form__control-input" type="text" name="patronymic"
+                  placeholder="Введите отчество" id="patronymic-id">
+                <span class="visually-hidden">Ваше имя</span>
+              </div>
+            </fieldset>
 
-          <fieldset class="revocation-form__filter-group">
-            <legend class="revocation-form__filter-group-title">Контактная информация:</legend>
-            <label class="revocation-form__control revocation-form__control--less" for="phone-id">Контактный телефон*:</label>
-            <div class="revocation-form__filter-group-item revocation-form__filter-group-item--less">
-              <input class="revocation-form__control-input revocation-form__control-input--less" type="tel" name="phone"
-                placeholder="Введите телефон" id="phone-id" required>
-              <button class="revocation-form__control-button revocation-form__control-button--call"
-                type="button"></button>
-              <span class="visually-hidden">Ваше телефон</span>
-            </div>
-            <label class="revocation-form__control revocation-form__control--less" for="email-id">Электронная почта*:</label>
-            <div class="revocation-form__filter-group-item revocation-form__filter-group-item--less">
-              <input class="revocation-form__control-input revocation-form__control-input--less" type="email"
-                name="email" placeholder="Введите e-mail" id="email-id" required>
-              <button class="revocation-form__control-button revocation-form__control-button--email"
-                type="button"></button>
-              <span class="visually-hidden">Ваша электронная почта</span>
-            </div>
-          </fieldset>
+            <fieldset class="revocation-form__filter-group">
+              <legend class="revocation-form__filter-group-title">Контактная информация:</legend>
+              <label class="revocation-form__control revocation-form__control--less" for="phone-id">Контактный
+                телефон*:</label>
+              <div class="revocation-form__filter-group-item revocation-form__filter-group-item--less">
+                <input class="revocation-form__control-input revocation-form__control-input--less" type="tel"
+                  name="phone" placeholder="Введите телефон" id="phone-id" required>
+                <button class="revocation-form__control-button revocation-form__control-button--call"
+                  type="button"></button>
+                <span class="visually-hidden">Ваше телефон</span>
+              </div>
+              <label class="revocation-form__control revocation-form__control--less" for="email-id">Электронная
+                почта*:</label>
+              <div class="revocation-form__filter-group-item revocation-form__filter-group-item--less">
+                <input class="revocation-form__control-input revocation-form__control-input--less" type="email"
+                  name="email" placeholder="Введите e-mail" id="email-id" required>
+                <button class="revocation-form__control-button revocation-form__control-button--email"
+                  type="button"></button>
+                <span class="visually-hidden">Ваша электронная почта</span>
+              </div>
+            </fieldset>
+          </div>
 
-          <fieldset class="revocation-form__filter-group">
+          <fieldset class="revocation-form__filter-group revocation-form__filter-group--radio">
             <legend class="revocation-form__filter-group-title">Ваше Общее впечатление:</legend>
-            <div class="revocation-form__filter-group-item">
+            <div class="revocation-form__filter-group-item revocation-form__filter-group-item--radio">
               <label class="revocation-form__control revocation-form__control-radio">
                 <input class="revocation-form__control-input visually-hidden" type="radio" name="product-group"
                   value="good" checked>
@@ -111,7 +115,7 @@
                 <span class="revocation-form__control-label">Скорее положительное</span>
               </label>
             </div>
-            <div class="revocation-form__filter-group-item">
+            <div class="revocation-form__filter-group-item revocation-form__filter-group-item--radio">
               <label class="revocation-form__control revocation-form__control-radio">
                 <input class="revocation-form__control-input visually-hidden" type="radio" name="product-group"
                   value="negative">
@@ -119,7 +123,7 @@
                 <span class="revocation-form__control-label">Скорее отрицательное</span>
               </label>
             </div>
-            <div class="revocation-form__filter-group-item">
+            <div class="revocation-form__filter-group-item revocation-form__filter-group-item--radio">
               <label class="revocation-form__control revocation-form__control-radio">
                 <input class="revocation-form__control-input visually-hidden" type="radio" name="product-group"
                   value="difficult">
@@ -129,30 +133,30 @@
             </div>
           </fieldset>
 
-          <fieldset class="revocation-form__filter-group">
+          <fieldset class="revocation-form__filter-group revocation-form__filter-group--checkbox">
             <legend class="revocation-form__filter-group-title">Посещенные достопримечательности:</legend>
-            <div class="revocation-form__filter-group-item">
+            <div class="revocation-form__filter-group-item revocation-form__filter-group-item--checkbox">
               <label class="revocation-form__control revocation-form__control-radio">
                 <input class="revocation-form__control-input visually-hidden" type="checkbox" name="bridge" checked>
                 <span class="revocation-form__control-checkbox-mark"></span>
                 <span class="revocation-form__control-label">Мост Дьявола</span>
               </label>
             </div>
-            <div class="revocation-form__filter-group-item">
+            <div class="revocation-form__filter-group-item revocation-form__filter-group-item--checkbox">
               <label class="revocation-form__control revocation-form__control-radio">
                 <input class="revocation-form__control-input visually-hidden" type="checkbox" name="mountain" checked>
                 <span class="revocation-form__control-checkbox-mark"></span>
                 <span class="revocation-form__control-label">Гора-Колокол</span>
               </label>
             </div>
-            <div class="revocation-form__filter-group-item">
+            <div class="revocation-form__filter-group-item revocation-form__filter-group-item--checkbox">
               <label class="revocation-form__control revocation-form__control-radio">
                 <input class="revocation-form__control-input visually-hidden" type="checkbox" name="park" checked>
                 <span class="revocation-form__control-checkbox-mark"></span>
                 <span class="revocation-form__control-label">Слайд-парк</span>
               </label>
             </div>
-            <div class="revocation-form__filter-group-item">
+            <div class="revocation-form__filter-group-item revocation-form__filter-group-item--checkbox">
               <label class="revocation-form__control revocation-form__control-radio">
                 <input class="revocation-form__control-input visually-hidden" type="checkbox" name="rocks">
                 <span class="revocation-form__control-checkbox-mark"></span>
@@ -169,9 +173,11 @@
             <span class="visually-hidden">Ваш подробный отзыв</span>
 
           </fieldset>
-          <button class="button button--submit" type="submit">ОТПРАВИТЬ
-            ОТЗЫВ</button>
-          <span class="revocation-form__required">* — обязательные поля</span>
+          <div class="revocation-form__textarea-wrapper">
+            <button class="button button--submit" type="submit">ОТПРАВИТЬ
+              ОТЗЫВ</button>
+            <span class="revocation-form__required">* — обязательные поля</span>
+          </div>
         </form>
       </section>
     </main>
