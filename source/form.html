@@ -83,18 +83,18 @@
 
           <fieldset class="revocation-form__filter-group">
             <legend class="revocation-form__filter-group-title">Контактная информация:</legend>
-            <div class="revocation-form__filter-group-item">
-              <label class="revocation-form__control" for="phone-id">Контактный телефон*:</label>
-              <input class="revocation-form__control-input" type="tel" name="phone" placeholder="Введите телефон"
-                id="phone-id" required>
+            <label class="revocation-form__control revocation-form__control--less" for="phone-id">Контактный телефон*:</label>
+            <div class="revocation-form__filter-group-item revocation-form__filter-group-item--less">
+              <input class="revocation-form__control-input revocation-form__control-input--less" type="tel" name="phone"
+                placeholder="Введите телефон" id="phone-id" required>
               <button class="revocation-form__control-button revocation-form__control-button--call"
                 type="button"></button>
               <span class="visually-hidden">Ваше телефон</span>
             </div>
-            <div class="revocation-form__filter-group-item">
-              <label class="revocation-form__control" for="email-id">Электронная почта*:</label>
-              <input class="revocation-form__control-input" type="email" name="email" placeholder="Введите e-mail"
-                id="email-id" required>
+            <label class="revocation-form__control revocation-form__control--less" for="email-id">Электронная почта*:</label>
+            <div class="revocation-form__filter-group-item revocation-form__filter-group-item--less">
+              <input class="revocation-form__control-input revocation-form__control-input--less" type="email"
+                name="email" placeholder="Введите e-mail" id="email-id" required>
               <button class="revocation-form__control-button revocation-form__control-button--email"
                 type="button"></button>
               <span class="visually-hidden">Ваша электронная почта</span>
@@ -169,7 +169,7 @@
             <span class="visually-hidden">Ваш подробный отзыв</span>
 
           </fieldset>
-          <button class="button revocation-form__control-button" type="submit">ОТПРАВИТЬ
+          <button class="button button--submit" type="submit">ОТПРАВИТЬ
             ОТЗЫВ</button>
           <span class="revocation-form__required">* — обязательные поля</span>
         </form>

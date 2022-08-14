@@ -27,3 +27,37 @@
   object-fit: contain;
   display: block;
 }
+
+@media (min-width: @tablet-width) {
+  .catalog-video-presentation__intro {
+    padding-top: 58px;
+    margin-bottom: 28px;
+  }
+
+  .catalog-video-presentation__description {
+    margin: 0;
+    margin-bottom: 88px;
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+
+  .catalog-video-presentation__img {
+    object-fit: fill;
+    width: 100%;
+    height: 500px;
+    padding-bottom: 40px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .catalog-video-presentation__description {
+    margin-bottom: 91px;
+    padding-left: 377px;
+    padding-right: 377px;
+  }
+
+  .catalog-video-presentation__img {
+    width: 800px;
+    padding-bottom: 84px;
+  }
+}

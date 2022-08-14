@@ -4,30 +4,74 @@
 }
 
 .revocation-form__filter-group {
+  &:not(:last-of-type)::before {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    background-color: #e5e5e5;
+    top: -69px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+  }
+
+  &:last-of-type::before {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    background-color: #e5e5e5;
+    top: -18px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+  }
+
+  &:last-of-type {
+    margin-bottom: 56px;
+  }
+  position: relative;
   border: none;
   padding: 0;
-}
-
-.revocation-form__filter-group:not(:last-child) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin-bottom: 24px;
 }
+
+// .revocation-form__filter-group:not(:last-child) {
+//   margin-bottom: 24px;
+// }
 
 .revocation-form__filter-group-title {
   .primary-text-style();
   text-align: center;
   color: #000000;
-  padding-bottom: 20px;
+  margin-bottom: 20px;
+  padding-top: 21px;
 }
 
 .revocation-form__filter-group-item {
-  &:not(:last-child) {
-    margin-bottom: 30px;
+  &:not(:first-child) {
+    margin-bottom: 16px;
   }
+  // display: flex;
+}
+
+.revocation-form__filter-group-item--less {
+  display: flex;
 }
 
 .revocation-form__control {
   .additional-text-style();
   color: #333333;
+  margin-left: 14px;
+}
+
+.revocation-form__control--less {
+  margin-right: 123px;
+  margin-left: 36px;
 }
 
 .revocation-form__control-input {
@@ -38,6 +82,12 @@
   border: none;
   color: #000000;
   display: block;
+  box-sizing: border-box;
+  width: 280px;
+}
+
+.revocation-form__control-input--less {
+  width: 222px;
 }
 
 .revocation-form__control-button {
@@ -46,19 +96,26 @@
   padding: 20px;
   cursor: pointer;
   display: inline-block;
+  width: 58px;
+  height: 58px;
+  box-sizing: border-box;
 }
 
 .revocation-form__control.revocation-form__control-radio {
   position: relative;
   display: block;
   padding-left: 58px;
+  width: 271px;
+  box-sizing: border-box;
+  margin-right: 24px;
+  margin-bottom: 16px;
 }
 
 .revocation-form__control-mark {
   position: absolute;
   background: #f2f2f2;
   border-radius: 50%;
-  top: 0;
+  top: -10px;
   left: 0;
   bottom: 0;
   right: 0;
@@ -89,7 +146,7 @@
 .revocation-form__control-checkbox-mark {
   position: absolute;
   background: #f2f2f2;
-  top: 0;
+  top: -9px;
   left: 0;
   bottom: 0;
   right: 0;
@@ -101,6 +158,7 @@
   .primary-text-style();
   text-align: center;
   color: #000000;
+  margin-bottom: 20px;
 }
 
 .revocation-form__control-input--textarea {
@@ -108,6 +166,16 @@
   .primary-text-style();
   text-transform: none;
   color: rgba(0, 0, 0, 0.3);
+  width: 279px;
+  min-height: 150px;
+  box-sizing: border-box;
+}
+
+.button.button--submit {
+  width: 281px;
+  margin: 0 auto;
+  display: block;
+  box-sizing: border-box;
 }
 
 .revocation-form__required {
@@ -119,4 +187,6 @@
   text-align: center;
   text-transform: uppercase;
   color: rgba(51, 51, 51, 0.6);
+  display: block;
+  margin-left: 143px;
 }
