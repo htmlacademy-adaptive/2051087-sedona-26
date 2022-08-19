@@ -2,6 +2,7 @@
   display: flex;
   flex-wrap: wrap;
   padding-top: 11px;
+  align-items: flex-end;
 }
 
 .catalog__item-button {
@@ -15,4 +16,34 @@
   .additional-text-style();
   font-weight: 700;
   color: #000000;
+}
+
+.catalog__item-icon {
+  opacity: 0.3;
+}
+
+@media (min-width: @tablet-width) {
+  .catalog-button-wrapper {
+    padding: 0;
+    padding-bottom: 9px;
+  }
+
+  .catalog__item-button {
+    margin-right: 9px;
+  }
+
+  .catalog__item-rating-field {
+    align-self: center;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .catalog__item-rating-field {
+    color: #ffffff;
+  }
+
+  .catalog__item-icon {
+    color: #ffffff;
+    opacity: 1;
+  }
 }

@@ -4,30 +4,290 @@
 }
 
 .revocation-form__filter-group {
+  &:last-of-type {
+    margin-bottom: 56px;
+  }
+  position: relative;
   border: none;
   padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 24px;
 }
 
-.revocation-form__filter-group:not(:last-child) {
-  margin-bottom: 24px;
+@media (min-width: @tablet-width) {
+  .revocation-form__filter-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 648px;
+    box-sizing: border-box;
+    margin: 0 auto;
+
+    .revocation-form__filter-group:nth-of-type(2) {
+      align-items: flex-end;
+
+      .revocation-form__filter-group-title {
+        padding-right: 50px;
+        margin-bottom: 25px;
+      }
+
+      .revocation-form__control--less:nth-of-type(1) {
+        margin-right: 103px;
+      }
+
+      .revocation-form__control--less:nth-of-type(2) {
+        margin-right: 116px;
+      }
+
+      .revocation-form__filter-group-item--less {
+        margin-bottom: 22px;
+      }
+    }
+
+    .revocation-form__filter-group {
+      &:first-of-type::before {
+        content: "";
+        position: absolute;
+        /* height: 338px; */
+        width: 1px;
+        background-color: #e5e5e5;
+        top: -52px;
+        bottom: 0;
+        right: 0;
+        left: 322px;
+      }
+    }
+  }
+  position: relative;
+}
+
+@media (min-width: @tablet-width) {
+  .revocation-form__filter-group--radio {
+    flex-direction: row;
+    width: 648px;
+    flex-wrap: wrap;
+    margin: auto;
+
+    .revocation-form__filter-group-title {
+      padding-bottom: 28px;
+      position: relative;
+      font-size: 21px;
+      line-height: 26px;
+
+      &::before {
+        content: "";
+        position: absolute;
+        height: 1px;
+        width: 123px;
+        background-color: #e5e5e5;
+        top: 33px;
+        bottom: 0;
+        right: 0;
+        left: -182px;
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        height: 1px;
+        width: 123px;
+        background-color: #e5e5e5;
+        top: 33px;
+        bottom: 0;
+        right: 0;
+        left: 339px;
+      }
+    }
+  }
+
+  .revocation-form__filter-group-item--radio:nth-of-type(odd) {
+    margin-left: 22px;
+    width: 280px;
+  }
+
+  .revocation-form__filter-group-item--radio:nth-of-type(even) {
+    margin-left: 16px;
+    width: 280px;
+  }
+
+  .revocation-form__filter-group--checkbox {
+    flex-direction: row;
+    align-items: center;
+    width: 648px;
+    margin: auto;
+    flex-wrap: wrap;
+
+    .revocation-form__filter-group-title {
+      font-size: 21px;
+      line-height: 26px;
+      width: 308px;
+      padding-bottom: 28px;
+
+      &::before {
+        content: "";
+        position: absolute;
+        height: 1px;
+        width: 123px;
+        background-color: #e5e5e5;
+        top: 47px;
+        bottom: 0;
+        right: 0;
+        left: 4px;
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        height: 1px;
+        width: 123px;
+        background-color: #e5e5e5;
+        top: 47px;
+        bottom: 0;
+        right: 0;
+        left: 525px;
+      }
+    }
+  }
+
+  .revocation-form__filter-group-item--checkbox {
+    width: 224px;
+
+    &:nth-of-type(odd) {
+      margin-left: 71px;
+    }
+
+    &:nth-of-type(even) {
+      margin-left: 33px;
+    }
+  }
+}
+
+@media (max-width: @tablet-width) {
+  .revocation-form__filter-group {
+    // &:not(:last-of-type)::before {
+    //   content: "";
+    //   position: absolute;
+    //   height: 1px;
+    //   width: 100%;
+    //   background-color: #e5e5e5;
+    //   top: -69px;
+    //   bottom: 0;
+    //   right: 0;
+    //   left: 0;
+    // }
+
+    // &:last-of-type::before {
+    //   content: "";
+    //   position: absolute;
+    //   height: 1px;
+    //   width: 100%;
+    //   background-color: #e5e5e5;
+    //   top: -91px;
+    //   bottom: 0;
+    //   right: 0;
+    //   left: 0;
+    // }
+
+    &:first-of-type::before {
+      content: "";
+      position: absolute;
+      height: 1px;
+      width: 100%;
+      background-color: #e5e5e5;
+      top: -76px;
+      bottom: 0;
+      right: 0;
+      left: 0;
+    }
+
+    .revocation-form__filter-wrapper {
+      &:last-of-type::before {
+        content: "";
+        position: absolute;
+        height: 1px;
+        width: 100%;
+        background-color: #e5e5e5;
+        top: -102px;
+        bottom: 0;
+        right: 0;
+        left: 0;
+      }
+    }
+
+    &:nth-child(3)::before {
+      content: "";
+      position: absolute;
+      height: 1px;
+      width: 100%;
+      background-color: #e5e5e5;
+      top: -98px;
+      bottom: 0;
+      right: 0;
+      left: 0;
+    }
+
+    &:nth-child(4)::before {
+      content: "";
+      position: absolute;
+      height: 1px;
+      width: 100%;
+      background-color: #e5e5e5;
+      top: -19px;
+      bottom: 0;
+      right: 0;
+      left: 0;
+    }
+
+    &:last-child::before {
+      content: "";
+      position: absolute;
+      height: 1px;
+      width: 100%;
+      background-color: #e5e5e5;
+      top: -95px;
+      bottom: 0;
+      right: 0;
+      left: 0;
+    }
+  }
 }
 
 .revocation-form__filter-group-title {
   .primary-text-style();
   text-align: center;
   color: #000000;
-  padding-bottom: 20px;
+  margin-bottom: 20px;
+  padding-top: 21px;
+}
+
+@media (max-width: @tablet-width) {
+  .revocation-form__filter-group-title {
+    width: 236px;
+  }
 }
 
 .revocation-form__filter-group-item {
-  &:not(:last-child) {
-    margin-bottom: 30px;
+  &:not(:first-child) {
+    margin-bottom: 16px;
   }
+  // display: flex;
+}
+
+.revocation-form__filter-group-item--less {
+  display: flex;
 }
 
 .revocation-form__control {
   .additional-text-style();
   color: #333333;
+  margin-left: 14px;
+}
+
+.revocation-form__control--less {
+  margin-right: 123px;
+  margin-left: 36px;
 }
 
 .revocation-form__control-input {
@@ -38,6 +298,12 @@
   border: none;
   color: #000000;
   display: block;
+  box-sizing: border-box;
+  width: 280px;
+}
+
+.revocation-form__control-input--less {
+  width: 222px;
 }
 
 .revocation-form__control-button {
@@ -46,19 +312,26 @@
   padding: 20px;
   cursor: pointer;
   display: inline-block;
+  width: 58px;
+  height: 58px;
+  box-sizing: border-box;
 }
 
 .revocation-form__control.revocation-form__control-radio {
   position: relative;
   display: block;
   padding-left: 58px;
+  width: 271px;
+  box-sizing: border-box;
+  margin-right: 24px;
+  margin-bottom: 16px;
 }
 
 .revocation-form__control-mark {
   position: absolute;
   background: #f2f2f2;
   border-radius: 50%;
-  top: 0;
+  top: -10px;
   left: 0;
   bottom: 0;
   right: 0;
@@ -89,7 +362,7 @@
 .revocation-form__control-checkbox-mark {
   position: absolute;
   background: #f2f2f2;
-  top: 0;
+  top: -9px;
   left: 0;
   bottom: 0;
   right: 0;
@@ -101,6 +374,7 @@
   .primary-text-style();
   text-align: center;
   color: #000000;
+  margin-bottom: 20px;
 }
 
 .revocation-form__control-input--textarea {
@@ -108,6 +382,16 @@
   .primary-text-style();
   text-transform: none;
   color: rgba(0, 0, 0, 0.3);
+  width: 279px;
+  min-height: 150px;
+  box-sizing: border-box;
+}
+
+.button.button--submit {
+  width: 281px;
+  margin: 0 auto;
+  display: block;
+  box-sizing: border-box;
 }
 
 .revocation-form__required {
@@ -119,4 +403,268 @@
   text-align: center;
   text-transform: uppercase;
   color: rgba(51, 51, 51, 0.6);
+  display: block;
+  margin-left: 143px;
+}
+
+@media (min-width: @tablet-width) {
+  .revocation-form__control-textarea {
+    padding-top: 16px;
+    font-size: 21px;
+    line-height: 26px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      height: 1px;
+      width: 123px;
+      background-color: #e5e5e5;
+      top: 29px;
+      bottom: 0;
+      right: 0;
+      left: 90px;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      height: 1px;
+      width: 123px;
+      background-color: #e5e5e5;
+      top: 29px;
+      bottom: 0;
+      right: 0;
+      left: 612px;
+    }
+  }
+
+  .revocation-form__control-input--textarea {
+    width: 648px;
+  }
+
+  .revocation-form__textarea-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 648px;
+    margin: 0 auto;
+    padding-bottom: 28px;
+  }
+
+  .button.button--submit {
+    width: 324px;
+    padding: 18px 60px 13px 49px;
+    margin: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .revocation-form__filter-wrapper {
+    width: 960px;
+  }
+
+  .revocation-form__control-input {
+    width: 430px;
+  }
+
+  .revocation-form__control-input--less {
+    width: 344px;
+  }
+
+  // .revocation-form__control.revocation-form__control--less {
+  //   margin-right: 223px;
+  // }
+}
+
+@media (min-width: @desktop-width) {
+  .revocation-form__filter-wrapper {
+    .revocation-form__filter-group:nth-of-type(2) {
+      .revocation-form__filter-group-title {
+        padding-right: 85px;
+        margin-bottom: 25px;
+      }
+
+      .revocation-form__control--less:nth-of-type(1) {
+        margin-right: 226px;
+      }
+
+      .revocation-form__control--less:nth-of-type(2) {
+        margin-right: 240px;
+      }
+
+      .revocation-form__filter-group-item--less {
+        margin-bottom: 22px;
+      }
+    }
+
+    .revocation-form__filter-group {
+      &:first-of-type::before {
+        content: "";
+        position: absolute;
+        /* height: 338px; */
+        width: 1px;
+        background-color: #e5e5e5;
+        top: -52px;
+        bottom: 0;
+        right: 0;
+        left: 494px;
+      }
+    }
+  }
+  position: relative;
+}
+
+@media (min-width: @desktop-width) {
+  .revocation-form__filter-group--radio {
+    flex-direction: row;
+    width: 960px;
+    flex-wrap: wrap;
+    margin: auto;
+
+    .revocation-form__filter-group-title {
+      padding-bottom: 28px;
+      position: relative;
+      font-size: 21px;
+      line-height: 26px;
+
+      &::before {
+        content: "";
+        position: absolute;
+        height: 1px;
+        width: 280px;
+        background-color: #e5e5e5;
+        top: 33px;
+        bottom: 0;
+        right: 0;
+        left: -339px;
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        height: 1px;
+        width: 280px;
+        background-color: #e5e5e5;
+        top: 33px;
+        bottom: 0;
+        right: 0;
+        left: 339px;
+      }
+    }
+  }
+
+  .revocation-form__filter-group-item--radio:nth-of-type(1) {
+    margin-left: 49px;
+    width: 280px;
+  }
+
+  .revocation-form__filter-group-item--radio:nth-of-type(even) {
+    // margin-left: 16px;
+    width: 280px;
+  }
+
+  .revocation-form__filter-group--checkbox {
+    flex-direction: row;
+    align-items: center;
+    width: 960px;
+    margin: auto;
+    flex-wrap: wrap;
+
+    .revocation-form__filter-group-title {
+      font-size: 21px;
+      line-height: 26px;
+      width: 308px;
+      padding-bottom: 28px;
+
+      &::before {
+        content: "";
+        position: absolute;
+        height: 1px;
+        width: 280px;
+        background-color: #e5e5e5;
+        top: 47px;
+        bottom: 0;
+        right: 0;
+        left: 4px;
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        height: 1px;
+        width: 280px;
+        background-color: #e5e5e5;
+        top: 47px;
+        bottom: 0;
+        right: 0;
+        left: 682px;
+      }
+    }
+  }
+
+  .revocation-form__filter-group-item--checkbox {
+    width: 224px;
+    margin: 0;
+
+    &:nth-of-type(1) {
+      margin-left: 38px;
+    }
+
+    &:nth-of-type(3) {
+      margin-left: 0;
+    }
+
+    &:nth-of-type(even) {
+      margin-left: 0;
+    }
+  }
+
+  .revocation-form__control-textarea {
+    padding-top: 16px;
+    font-size: 21px;
+    line-height: 26px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      height: 1px;
+      width: 280px;
+      background-color: #e5e5e5;
+      top: 29px;
+      bottom: 0;
+      right: 0;
+      left: 123px;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      height: 1px;
+      width: 280px;
+      background-color: #e5e5e5;
+      top: 29px;
+      bottom: 0;
+      right: 0;
+      left: 801px;
+    }
+  }
+
+  .revocation-form__control-input--textarea {
+    width: 768px;
+  }
+
+  .revocation-form__textarea-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 768px;
+    margin: 0 auto;
+    padding-bottom: 64px;
+  }
+
+  .button.button--submit {
+    width: 384px;
+    padding: 18px 60px 13px 49px;
+    margin: 0;
+  }
 }

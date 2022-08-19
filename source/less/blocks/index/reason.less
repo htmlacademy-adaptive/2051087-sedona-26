@@ -6,6 +6,7 @@
 
 .reason__block {
   padding: 33px 22px 40px 16px;
+  box-sizing: border-box;
 }
 
 .reason__block-title {
@@ -29,4 +30,53 @@
   text-align: center;
   color: #ffffff;
   margin: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .reason {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .reason__wrapper {
+    display: flex;
+  }
+
+  .reason__block {
+    width: 256px;
+    padding: 40px 32px 44px 32px;
+  }
+
+  .reason__block-number {
+    margin-bottom: 24px;
+  }
+
+  .picture-container {
+    width: 512px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .reason {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .reason__wrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  .reason__block {
+    width: 400px;
+    padding: 47px 52px 56px 53px;
+  }
+
+  .reason__block-number {
+    margin-bottom: 24px;
+  }
+
+  .picture-container {
+    width: 512px;
+  }
 }
