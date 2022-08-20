@@ -283,6 +283,7 @@
   .additional-text-style();
   color: #333333;
   margin-left: 14px;
+  cursor: pointer;
 }
 
 .revocation-form__control--less {
@@ -346,7 +347,7 @@
   text-transform: none;
 }
 
-.revocation-form__control-mark::before {
+.revocation-form__control-input:checked + .revocation-form__control-mark::before {
   content: "";
   position: absolute;
   background-color: #3f5e72;
@@ -369,6 +370,15 @@
   right: 0;
   width: 46px;
   height: 46px;
+}
+
+.revocation-form__control-input:checked + .revocation-form__control-checkbox-mark::before {
+  content: url("../../../img/catalog/galka-adaptive.svg");
+  position: absolute;
+  background-repeat: no-repeat;
+  bottom: 25%;
+  left: 25%;
+  right: 25%;
 }
 
 .revocation-form__control-textarea {
