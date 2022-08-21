@@ -5,6 +5,11 @@
   padding-bottom: 49px;
   padding-right: 29px;
   padding-left: 30px;
+
+  @media (max-width: @mobile-width-only) {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
 }
 
 .search-hotel__question {
@@ -31,6 +36,10 @@
   padding: 16px 49px;
   border: none;
   display: block;
+
+  @media (max-width: @mobile-width-only) {
+    white-space: nowrap;
+  }
 }
 
 @media (min-width: @tablet-width) {

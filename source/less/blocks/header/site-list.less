@@ -9,8 +9,18 @@
   background: #81b3d2;
   box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2);
   text-align: center;
+  cursor: pointer;
   // border-top: 1px solid rgba(255, 255, 255, 0.2);
   // border-bottom: 1px solid rgba(1, 1, 1, 0.2);
+
+  &:hover .site-list__link {
+    color: #81b3d2;
+  }
+
+  &:active .site-list__link {
+    color: #000000;
+    opacity: 0.3;
+  }
 }
 
 .site-list__link {
@@ -34,6 +44,18 @@
   .site-list__item {
     border-top: 1px solid rgba(255, 255, 255, 0.2);
     border-bottom: 1px solid rgba(1, 1, 1, 0.2);
+
+    &:hover {
+      background-color: #669ec0;
+    }
+
+    &:active {
+      background-color: #5496bd;
+
+      .site-list__link {
+        opacity: 0.3;
+      }
+    }
   }
 }
 
@@ -50,6 +72,7 @@
     &:first-of-type {
       .site-list__link {
         padding: 17px 47px;
+        cursor: pointer;
       }
     }
     background-color: #ffffff;
