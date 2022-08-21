@@ -5,6 +5,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   padding: 90px 18px 28px 18px;
+  position: relative;
 }
 
 .main-picture__slogan {
@@ -15,5 +16,14 @@
 @media (min-width: @tablet-width) {
   .main-picture {
     padding: 78px 153px 90px 153px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-picture::before {
+    content: url("../../img/index/divider.svg");
+    position: absolute;
+    right: 0%;
+    bottom: -7px;
   }
 }
