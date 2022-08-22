@@ -6,6 +6,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
 }
 
 .catalog-video-presentation__intro {
@@ -27,6 +28,19 @@
   max-width: 100%;
   object-fit: contain;
   display: block;
+  position: relative;
+
+  &::before {
+    content: url("../../../img/catalog/video-button.svg");
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: 0 auto;
+    width: 48px;
+    height: 54px;
+  }
 }
 
 @media (min-width: @tablet-width) {
