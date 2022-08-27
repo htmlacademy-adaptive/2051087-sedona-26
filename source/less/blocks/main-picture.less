@@ -1,21 +1,100 @@
 .main-picture {
-  background-image: url("../../img/index/index-background.jpg");
+  background-image: url("../../img/index/back-mobile.jpg.jpg");
   background-color: #000000;
   color: #ffffff;
   background-size: cover;
   background-repeat: no-repeat;
   padding: 90px 18px 28px 18px;
   // position: relative;
+  min-height: 389px;
+  box-sizing: border-box;
+  background-position: 50%;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../img/index/back-mobile.jpg@2x.jpg");
+  }
+}
+
+.main-picture-less {
+  background-image: url("../../img/catalog/back-mobile.jpg.jpg");
+  height: 157px;
+  background-color: #000000;
+  color: #ffffff;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 90px 18px 28px 18px;
+  box-sizing: border-box;
+  background-position: 50%;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../img/catalog/back-mobile.jpg@2x.jpg");
+  }
 }
 
 .main-picture__slogan {
   display: block;
   margin: 0 auto;
+  width: 282px;
+  height: 214px;
+}
+
+.main-picture__slogan--less {
+  display: block;
+  margin: 0 auto;
+  width: 229px;
+  height: 39px;
+
+  @media (min-width: @tablet-width) {
+    width: 456px;
+    height: 77px;
+  }
 }
 
 @media (min-width: @tablet-width) {
   .main-picture {
     padding: 78px 153px 90px 153px;
+    background-image: url("../../img/index/back-tablet.jpg.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/index/back-tablet.jpg@2x.jpg");
+    }
+  }
+
+  .main-picture-less {
+    background-image: url("../../img/catalog/back-tablet.jpg.jpg");
+    height: 291px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/catalog/back-tablet.jpg@2x.jpg");
+    }
+  }
+
+  .main-picture__slogan {
+    width: 461px;
+    height: 350px;
+  }
+
+  .main-picture__slogan--less {
+    width: 456px;
+    height: 77px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-picture {
+    background-image: url("../../img/index/back-desktop.jpg.jpg");
+  }
+
+  .main-picture-less {
+    background-image: url("../../img/catalog/back-desktop.jpg.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/catalog/back-desktop.jpg@2x.jpg");
+    }
+  }
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../img/index/back-desktop.jpg@2x.jpg");
   }
 }
 
