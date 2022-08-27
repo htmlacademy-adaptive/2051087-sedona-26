@@ -6,6 +6,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
 }
 
 .catalog-video-presentation__intro {
@@ -20,18 +21,34 @@
   .additional-text-style();
   text-align: center;
   color: #333333;
+  margin-bottom: 38px;
 }
 
 .catalog-video-presentation__img {
   max-width: 100%;
   object-fit: contain;
   display: block;
+  position: relative;
+
+  &::before {
+    content: url("../../../img/catalog/video-button.svg");
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: 0 auto;
+    width: 48px;
+    height: 54px;
+  }
 }
 
 @media (min-width: @tablet-width) {
   .catalog-video-presentation__intro {
     padding-top: 58px;
     margin-bottom: 28px;
+    font-size: 30px;
+    line-height: 26px;
   }
 
   .catalog-video-presentation__description {

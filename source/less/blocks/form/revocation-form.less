@@ -196,7 +196,7 @@
       height: 1px;
       width: 100%;
       background-color: #e5e5e5;
-      top: -76px;
+      top: -79px;
       bottom: 0;
       right: 0;
       left: 0;
@@ -246,7 +246,7 @@
       height: 1px;
       width: 100%;
       background-color: #e5e5e5;
-      top: -95px;
+      top: -72px;
       bottom: 0;
       right: 0;
       left: 0;
@@ -264,13 +264,13 @@
 
 @media (max-width: @tablet-width) {
   .revocation-form__filter-group-title {
-    width: 236px;
+    min-width: 236px;
   }
 }
 
 .revocation-form__filter-group-item {
   &:not(:first-child) {
-    margin-bottom: 16px;
+    margin-bottom: 18px;
   }
   // display: flex;
 }
@@ -283,11 +283,37 @@
   .additional-text-style();
   color: #333333;
   margin-left: 14px;
+  cursor: pointer;
+
+  &:hover .revocation-form__control-checkbox-mark,
+  &:hover .revocation-form__control-mark {
+    background-color: #e5e5e5;
+  }
+
+  &:focus-within .revocation-form__control-checkbox-mark,
+  &:focus-within .revocation-form__control-mark {
+    background-color: rgba(255, 255, 255, 0.6);
+    outline: 3px solid #83b3d3;
+  }
+
+  &:active .revocation-form__control-checkbox-mark,
+  &:active .revocation-form__control-mark {
+    background-color: #d5d5d5;
+
+    .revocation-form__control-mark::before {
+      background-color: rgba(51, 51, 51, 0.3);
+    }
+
+    .revocation-form__control-checkbox-mark::before {
+      opacity: 0.6;
+    }
+  }
 }
 
 .revocation-form__control--less {
   margin-right: 123px;
   margin-left: 36px;
+  white-space: nowrap;
 }
 
 .revocation-form__control-input {
@@ -300,6 +326,25 @@
   display: block;
   box-sizing: border-box;
   width: 280px;
+
+  &::placeholder {
+    font-size: 18px;
+    line-height: 26px;
+    color: rgba(0, 0, 0, 0.3);
+  }
+
+  &:hover {
+    background-color: #e5e5e5;
+  }
+
+  &:not(:placeholder-shown) {
+    background-color: #ffffff;
+    border: 4px solid #e5e5e5;
+  }
+
+  &:not(:placeholder-shown):hover {
+    opacity: 0.6;
+  }
 }
 
 .revocation-form__control-input--less {
@@ -313,8 +358,26 @@
   cursor: pointer;
   display: inline-block;
   width: 58px;
-  height: 58px;
+  min-height: 58px;
   box-sizing: border-box;
+
+  &:hover {
+    background-color: #cdcdcd;
+
+    .call,
+    .email {
+      opacity: 0.5;
+    }
+  }
+
+  &:active {
+    background-color: fade(#cdcdcd, 30%);
+
+    .call,
+    .email {
+      opacity: 0.5;
+    }
+  }
 }
 
 .revocation-form__control.revocation-form__control-radio {
@@ -345,10 +408,10 @@
   text-transform: none;
 }
 
-.revocation-form__control-mark::before {
+.revocation-form__control-input:checked + .revocation-form__control-mark::before {
   content: "";
   position: absolute;
-  background-color: #3f5e72;
+  background-color: rgba(51, 51, 51, 1);
   border-radius: 50%;
   width: 16px;
   height: 16px;
@@ -370,6 +433,15 @@
   height: 46px;
 }
 
+.revocation-form__control-input:checked + .revocation-form__control-checkbox-mark::before {
+  content: url("../../../img/catalog/galka-adaptive.svg");
+  position: absolute;
+  background-repeat: no-repeat;
+  bottom: 25%;
+  left: 25%;
+  right: 25%;
+}
+
 .revocation-form__control-textarea {
   .primary-text-style();
   text-align: center;
@@ -385,6 +457,12 @@
   width: 279px;
   min-height: 150px;
   box-sizing: border-box;
+  resize: none;
+  // color: #000000;
+
+  &:not(:placeholder-shown) {
+    color: #000000;
+  }
 }
 
 .button.button--submit {
@@ -520,6 +598,7 @@
     width: 960px;
     flex-wrap: wrap;
     margin: auto;
+    margin-bottom: 45px;
 
     .revocation-form__filter-group-title {
       padding-bottom: 28px;
@@ -569,6 +648,7 @@
     width: 960px;
     margin: auto;
     flex-wrap: wrap;
+    margin-bottom: 45px;
 
     .revocation-form__filter-group-title {
       font-size: 21px;

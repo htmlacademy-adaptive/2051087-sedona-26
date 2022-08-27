@@ -55,9 +55,9 @@
 @media (min-width: @tablet-width) {
   .catalog__list {
     display: grid;
-    grid-template-columns: repeat(2, 324px);
-    width: 640px;
-    margin: 0 auto;
+    grid-template-columns: minmax(324px, 1fr) minmax(324px, 1fr);
+    justify-content: center;
+    padding: 0 60px;
   }
 
   .catalog__item {
@@ -80,5 +80,6 @@
     grid-template-columns: repeat(3, 400px);
     width: 1200px;
     margin: 0 auto;
+    padding: 0;
   }
 }
