@@ -5,10 +5,17 @@
   background-size: cover;
   background-repeat: no-repeat;
   padding: 90px 18px 28px 18px;
-  // position: relative;
+  position: relative;
   min-height: 389px;
   box-sizing: border-box;
   background-position: 50%;
+
+  &::before {
+    content: url("../../img/index/divider-mobile.svg");
+    position: absolute;
+    right: 0%;
+    bottom: -7px;
+  }
 
   @media (min-resolution: 2dppx) {
     background-image: url("../../img/index/back-mobile.jpg@2x.jpg");
@@ -25,6 +32,13 @@
   padding: 90px 18px 28px 18px;
   box-sizing: border-box;
   background-position: 50%;
+
+  &::before {
+    content: url("../../img/index/divider-mobile.svg");
+    position: absolute;
+    right: 0%;
+    bottom: 348px;
+  }
 
   @media (min-resolution: 2dppx) {
     background-image: url("../../img/catalog/back-mobile.jpg@2x.jpg");
@@ -55,6 +69,15 @@
     padding: 78px 153px 90px 153px;
     background-image: url("../../img/index/back-tablet.jpg.jpg");
 
+    &::before {
+      content: url("../../img/index/divider-tablet.svg");
+      position: absolute;
+      right: 0%;
+      bottom: -1px;
+      min-width: 768px;
+      height: 57px;
+    }
+
     @media (min-resolution: 2dppx) {
       background-image: url("../../img/index/back-tablet.jpg@2x.jpg");
     }
@@ -63,6 +86,13 @@
   .main-picture-less {
     background-image: url("../../img/catalog/back-tablet.jpg.jpg");
     height: 291px;
+
+    &::before {
+      content: url("../../img/index/divider-tablet.svg");
+      position: absolute;
+      right: 0%;
+      bottom: 670px;
+    }
 
     @media (min-resolution: 2dppx) {
       background-image: url("../../img/catalog/back-tablet.jpg@2x.jpg");
@@ -88,6 +118,13 @@
   .main-picture-less {
     background-image: url("../../img/catalog/back-desktop.jpg.jpg");
 
+    &::before {
+      content: url("../../img/index/divider.svg");
+      position: absolute;
+      bottom: 446px;
+      left: 40px;
+    }
+
     @media (min-resolution: 2dppx) {
       background-image: url("../../img/catalog/back-desktop.jpg@2x.jpg");
     }
@@ -98,11 +135,11 @@
   }
 }
 
-// @media (min-width: @desktop-width) {
-//   .main-picture::before {
-//     content: url("../../img/index/divider.svg");
-//     position: absolute;
-//     right: 0%;
-//     bottom: -7px;
-//   }
-// }
+@media (min-width: @desktop-width) {
+  .main-picture::before {
+    content: url("../../img/index/divider.svg");
+    position: absolute;
+    right: 0%;
+    bottom: -1px;
+  }
+}
