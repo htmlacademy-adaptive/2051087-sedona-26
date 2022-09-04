@@ -2,6 +2,9 @@
 <html class="page" lang="ru">
 
 <head>
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/vaficon/apple-icon-180x180.png">
+  <link rel="manifest" href="manifest.json">
   <link rel="stylesheet" href="css/style.css">
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -45,8 +48,8 @@
     </header>
     <main class="main-container page-form-container">
       <h1 class="visually-hidden">Каталог фотографий города Седона</h1>
-      <div class="main-picture main-picture-wrapper main-picture-wrapper--less">
-        <img class="main-picture__slogan" src="img/form/SEDONA.svg" width="229" height="39"
+      <div class="main-picture-less main-picture-wrapper main-picture-wrapper--less">
+        <img class="main-picture__slogan main-picture__slogan--less" src="img/form/SEDONA.svg" width="229" height="39"
           alt="Добро пожаловать в великолепное место Седона.">
       </div>
       <section class="introduction">
@@ -58,8 +61,15 @@
         <h2 class="visually-hidden">Каталог фотографий Седоны</h2>
         <ul class="catalog__list">
           <li class="catalog__item">
-            <img class="catalog__item-image" src="img/catalog/open_spaces.jpg" width="280" height="280"
-              alt="Бескрайние просторы Седоны.">
+            <picture>
+              <source media="(min-width: 1200px)"
+                srcset="img/catalog/photo-1-desktop.jpg.jpg, img/catalog/photo-1-desktop.jpg@2x.jpg">
+              <source media="(min-width: 768px)"
+                srcset="img/catalog/photo-1-tablet1.jpg, img/catalog/photo-1-tablet1@2x.jpg">
+              <img class="catalog__item-image" src="img/catalog/photo-1-mobile.jpg.jpg"
+                srcset="img/catalog/photo-1-mobile.jpg@2x.jpg" width="280" height="280"
+                alt="Бескрайние просторы Седоны.">
+            </picture>
             <div class="catalog-panel-wrapper">
               <div class="catalog-item-wrapper">
                 <h3 class="catalog__item-title">Неродные просторы</h3>
@@ -78,8 +88,14 @@
             </div>
           </li>
           <li class="catalog__item">
-            <img class="catalog__item-image" src="img/catalog/vegetation.jpg" width="280" height="280"
-              alt="Завораживающая природа.">
+            <picture>
+              <source media="(min-width: 1200px)"
+                srcset="img/catalog/photo-2-desktop.jpg.jpg, img/catalog/photo-2-desktop.jpg@2x.jpg">
+              <source media="(min-width: 768px)"
+                srcset="img/catalog/photo-2-tablet.jpg, img/catalog/photo-2-tablet1@2x.jpg">
+              <img class="catalog__item-image" src="img/catalog/photo-2-mobile.jpg.jpg"
+                srcset="img/catalog/photo-2-mobile.jpg@2x.jpg" width="280" height="280" alt="Завораживающая природа.">
+            </picture>
             <div class="catalog-panel-wrapper">
               <div class="catalog-item-wrapper">
                 <h3 class="catalog__item-title">Местная растительность</h3>
@@ -98,8 +114,14 @@
             </div>
           </li>
           <li class="catalog__item">
-            <img class="catalog__item-image" src="img/catalog/road.jpg" width="280" height="280"
-              alt="Невероятные дороги.">
+            <picture>
+              <source media="(min-width: 1200px)"
+                srcset="img/catalog/photo-3-desktop.jpg.jpg, img/catalog/photo-3-desktop.jpg@2x.jpg">
+              <source media="(min-width: 768px)"
+                srcset="img/catalog/photo-3-tablet.jpg, img/catalog/photo-3-tablet1@2x.jpg">
+              <img class="catalog__item-image" src="img/catalog/photo-3-mobile.jpg.jpg"
+                srcset="img/catalog/photo-3-mobile.jpg@2x.jpg" width="280" height="280" alt="Невероятные дороги.">
+            </picture>
             <div class="catalog-panel-wrapper">
               <div class="catalog-item-wrapper">
                 <h3 class="catalog__item-title">Дорога на север</h3>
@@ -118,7 +140,14 @@
             </div>
           </li>
           <li class="catalog__item">
-            <img class="catalog__item-image" src="img/catalog/evil_bridge.jpg" width="280" height="280" alt="Каньоны">
+            <picture>
+              <source media="(min-width: 1200px)"
+                srcset="img/catalog/photo-4-desktop.jpg.jpg, img/catalog/photo-4-desktop.jpg@2x.jpg">
+              <source media="(min-width: 768px)"
+                srcset="img/catalog/photo-4-tablet2.jpg, img/catalog/photo-4-tablet2@2x.jpg">
+              <img class="catalog__item-image" src="img/catalog/photo-4-mobile1.jpg"
+                srcset="img/catalog/photo-4-mobile1@2x.jpg" width="280" height="280" alt="Каньоны">
+            </picture>
             <div class="catalog-panel-wrapper">
               <div class="catalog-item-wrapper">
                 <h3 class="catalog__item-title">Мост дьявола</h3>
@@ -142,8 +171,14 @@
         <h2 class="catalog-video-presentation__intro">Все еще сомневаетесь?</h2>
         <p class="catalog-video-presentation__description">Смотрите видеопрезентацию и скорее за билетами, пока они
           не подорожали в очередной раз!</p>
-        <img class="catalog-video-presentation__img catalog-video-presentation__img--play"
-          src="img/catalog/video-mobile.jpg" alt="Видеопрезентация Седоны" width="280" height="177">
+        <picture>
+          <source media="(min-width: 1200px)"
+            srcset="img/catalog/video-desktop.jpg.jpg, img/catalog/video-desktop.jpg@2x.jpg">
+          <source media="(min-width: 768px)" srcset="img/catalog/video-tablet1.jpg, img/catalog/video-tablet1@2x.jpg">
+          <img class="catalog-video-presentation__img catalog-video-presentation__img--play"
+            src="img/catalog/video-mobile.jpg.jpg" srcset="img/catalog/video-mobile.jpg@2x.jpg"
+            alt="Видеопрезентация Седоны" width="280" height="177">
+        </picture>
       </section>
     </main>
     <footer class="page-footer">
