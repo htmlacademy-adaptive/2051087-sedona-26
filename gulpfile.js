@@ -82,7 +82,7 @@ const copy = (done) => {
 }
 // почистить папку build, если в source были какие-то удаления
 
-const dele = () => {
+const deleteAsync = () => {
   return del('build');
 };
 
@@ -113,7 +113,7 @@ const watcher = () => {
 // версия для production
 
 export const build = gulp.series(
-  dele,
+  deleteAsync,
   copy,
   libsquo,
   gulp.parallel( // выполняются параллельно
@@ -129,7 +129,7 @@ export const build = gulp.series(
 // запускается 'gulp' из package.json (npm run start - "start": "npx gulp")
 
 export default gulp.series(
-  dele,
+  deleteAsync,
   copy,
   copyImages, // копируем картинки, а не оптимизируем
   gulp.parallel( // выполняются параллельно
